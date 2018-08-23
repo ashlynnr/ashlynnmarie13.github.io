@@ -1,0 +1,54 @@
+{
+  "assetsByChunkName": {
+    "path---my-second-post": [
+      "path---my-second-post-6bba84ef1e36f9a2fe25.js",
+      "path---my-second-post-6bba84ef1e36f9a2fe25.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-23a66785a9b9f5e08795.js",
+      "component---src-pages-index-js-23a66785a9b9f5e08795.js.map"
+    ],
+    "path---": [
+      "path----87eaeae8e7ee9483268d.js",
+      "path----87eaeae8e7ee9483268d.js.map"
+    ],
+    "path---new-page": [
+      "path---new-page-4baeef80243c5f91c1e3.js",
+      "path---new-page-4baeef80243c5f91c1e3.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-80ad8356218a5175adf7.js",
+      "component---src-templates-blog-post-js-80ad8356218a5175adf7.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ac88098a55790c10f361.js",
+      "component---src-layouts-index-js-ac88098a55790c10f361.js.map"
+    ],
+    "path---hi-folks": [
+      "path---hi-folks-fd7577026539afcc4d2a.js",
+      "path---hi-folks-fd7577026539afcc4d2a.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-bb295fb7d90fdbd71b74.js",
+      "path---hello-world-bb295fb7d90fdbd71b74.js.map"
+    ],
+    "commons": [
+      "commons-892d06806ab0cf06f0f3.js",
+      "commons-892d06806ab0cf06f0f3.js.map"
+    ],
+    "component---src-pages-new-page-js": [
+      "component---src-pages-new-page-js-2f4279f5d1a82359dfbf.js",
+      "component---src-pages-new-page-js-2f4279f5d1a82359dfbf.js.map"
+    ],
+    "app": [
+      "app-98c9c545eb76ab6573d4.js",
+      "build-js-styles.css",
+      "app-98c9c545eb76ab6573d4.js.map",
+      "build-js-styles.css.map"
+    ]
+  }
+}
