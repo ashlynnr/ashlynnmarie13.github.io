@@ -279,9 +279,12 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
+          <label htmlFor="name">Email: rodriguez.ashlynn@gmail.com</label>
+          <label htmlFor="name">Phone: 972-832-8883</label>
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
+
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
