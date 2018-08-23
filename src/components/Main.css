@@ -1,0 +1,162 @@
+.spotify-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.spotify-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+.spotify-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.carousel-spotify {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.carousel-spotify-profileitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 390px;
+}
+
+#content {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#content figure {
+  margin: 0;
+}
+.react-3d-carousel {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
+  border: solid black 5px;
+}
+
+.react-3d-carousel .carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.react-3d-carousel .carousel figure {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.react-3d-carousel .carousel figure {
+  background: hsla(160, 100%, 50%, 0.8);
+}
+
+#content table {
+  position: absolute;
+  top: 400px;
+  width: 400px;
+}
+
+.slider ul li > img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.slider ol {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  bottom: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.slider ol li {
+  display: inline-block;
+  min-width: 10px;
+  min-height: 10px;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #bec0bc;
+  margin: 0 0.5em;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: 100%;
+}
+
+.slider ol [aria-current='true'] {
+  pointer-events: none;
+  cursor: auto;
+  background-color: rgba(255, 255, 255, 0.158);
+}
+
+.slider ul ~ div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -1em;
+  padding: 0;
+}
+
+.slider ul ~ div button {
+  position: absolute;
+  font-size: inherit;
+  background-color: rgba(255, 255, 255, 0.158);
+  height: 2em;
+  width: 2em;
+  opacity: 0.5;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider .prev {
+  left: 0;
+}
+
+.slider .next {
+  right: 0;
+}
+
+.video-box {
+  width: 100%;
+  height: 60%;
+
+  object-fit: cover;
+}
+#video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
