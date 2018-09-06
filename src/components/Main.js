@@ -118,7 +118,7 @@ class Main extends React.Component {
             rooms, and private messaging. As the project manager, I was in
             charge of choosing which technologies to integrate into the
             application and was the primary resource for team members that
-            needed help with front-end and back-end issues. Technologies used:
+            needed help with front-end and back-end issues.
           </p>
           <div className="video-box">
             <video id="video" loop autoPlay>
@@ -255,18 +255,26 @@ class Main extends React.Component {
             />
           </span>
           <p>
+            TECHNOLOGIES: Javascript, React, Vue, Next, HTML5, CSS3, Node.js,
+            Express,
+            <br />
+            Socket.io, OAuth 2.0, JSON Web Token, MongoDB, PostgreSQL, RESTful
+            APIs
+            <br />
+            <br />
             After graduating from the University of North Texas with a Bachelor
-            of Business Administration, I entered the work force unsure of what
-            I wanted to do and fell into technical recruiting. To better
-            understand what my clients and candidates, I began coding and was
-            instantly hooked. I entered a coding bootcamp at DevMountain and
-            have been freelancing since graduating.
-            <br /> My background is diverse, as I'm both a professional dancer
-            and a business/accounting graduate. Web development has enabled me
-            to fulfill both my need to create and utilize my talent for problem
-            solving. Because of this, I'm truly passionate about all my products
-            and enjoy working to make them as dynamic and asthetically appealing
-            as possible.
+            of Business Administration, I entered the work force and fell into
+            technical recruiting. To better understand what my clients and
+            candidates needed, I began coding and was instantly hooked. I
+            recently completed a programming course at DevMountain and have been
+            freelancing since graduating.
+            <br />
+            <br /> My background is diverse, as I was previously both a
+            professional artist and a business/accounting graduate. Web
+            development has enabled me to fulfill both my need to create and
+            utilize my talent for problem solving. Because of this, I'm truly
+            passionate about my projects and enjoy working to make them as
+            dynamic and asthetically appealing as possible.
           </p>
           {close}
         </article>
