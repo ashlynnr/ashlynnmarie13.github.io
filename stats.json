@@ -21,8 +21,8 @@
       "component---src-templates-blog-post-js-80ad8356218a5175adf7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-5e842a17a9a2b3edb9de.js",
-      "component---src-layouts-index-js-5e842a17a9a2b3edb9de.js.map"
+      "component---src-layouts-index-js-bc60f42a59b9bf467f24.js",
+      "component---src-layouts-index-js-bc60f42a59b9bf467f24.js.map"
     ],
     "path---hi-folks": [
       "path---hi-folks-fd7577026539afcc4d2a.js",
@@ -45,9 +45,9 @@
       "component---src-pages-new-page-js-2f4279f5d1a82359dfbf.js.map"
     ],
     "app": [
-      "app-8a73703885f4a6f6903f.js",
+      "app-73736d6512e48300a554.js",
       "build-js-styles.css",
-      "app-8a73703885f4a6f6903f.js.map",
+      "app-73736d6512e48300a554.js.map",
       "build-js-styles.css.map"
     ]
   }
