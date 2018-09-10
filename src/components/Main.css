@@ -160,3 +160,23 @@
 
   object-fit: cover;
 }
+
+.roomers-link:link {
+  text-decoration: none;
+}
+
+.roomers-link {
+  text-decoration: none;
+}
+
+.roomers-link:hover {
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}

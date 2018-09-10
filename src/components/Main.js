@@ -15,6 +15,7 @@ import TUNEder3 from '../images/portfolio/TUNEder 3.jpeg'
 import TUNEder4 from '../images/portfolio/TUNEder 4.jpeg'
 import TUNEder5 from '../images/portfolio/TUNEder 5.jpeg'
 import TUNEderLanding from '../images/portfolio/TUNEder Landing.mp4'
+import Headshot from '../images/portfolio/Headshot.jpg'
 
 import Carousel from './Carousel.js'
 import './Main.css'
@@ -43,70 +44,19 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Roomers</h2>
-          <span className="image main">
-            <Carousel autoPlayInterval={4000} indicator={true} switcher={true}>
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={Roomers3} alt="" />
-                </div>
-              </div>
-
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={Roomers2} alt="" />
-                </div>
-              </div>
-
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={Roomers5} alt="" />
-                </div>
-              </div>
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={Roomers4} alt="" />
-                </div>
-              </div>
-            </Carousel>
-          </span>
+          <h3>
+            <a href="http://www.roomers.space/#/" className="roomers-link">
+              View at: roomers.space
+            </a>
+          </h3>
+          <br />
+          <div className="video-box">
+            <video id="video" loop autoPlay>
+              <source src={RoomersLanding} type="video/mp4" />
+            </video>
+          </div>
           <p>
+            <br />
             Completion: August 2017
             <br />
             Role: Project Manager/Developer
@@ -120,14 +70,10 @@ class Main extends React.Component {
             application and was the primary resource for team members that
             needed help with front-end and back-end issues.
           </p>
-          <div className="video-box">
-            <video id="video" loop autoPlay>
-              <source src={RoomersLanding} type="video/mp4" />
-            </video>
-          </div>
+
           <p>
             Technologies used:
-            <br />- Implemented MongoDB to hold and maintain all user data.
+            <br />- Implemented MongoDB to hold and maintain all user data
             <br />- Used AWS S3 to upload and store images
             <br />- Integrated Auth0 for user authentication and protection
             <br />- Implemented Express and Massive on top of Node.js
@@ -145,69 +91,12 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">TUNEder</h2>
-          <span className="image main">
-            <Carousel autoPlayInterval={6000} indicator={true} switcher={true}>
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={TUNEder2} alt="" />
-                </div>
-              </div>
-
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={TUNEder3} alt="" />
-                </div>
-              </div>
-
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={TUNEder4} alt="" />
-                </div>
-              </div>
-              <div
-                className="spotify-box"
-                style={{
-                  height: '400px',
-                  textAlign: 'center',
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  objectFit: 'cover',
-                }}
-              >
-                <div className="spotify-item">
-                  <img className="spotify-image" src={TUNEder5} alt="" />
-                </div>
-              </div>
-            </Carousel>
-          </span>
+          <div className="video-box">
+            <video id="video" loop autoPlay>
+              <source src={TUNEderLanding} type="video/mp4" />
+            </video>
+          </div>
+          <br />
           <p>
             Completion: July 2017
             <br />
@@ -220,16 +109,12 @@ class Main extends React.Component {
             their profile and the app also offers a matching and chat feature.
             This was a personally developed project.
           </p>
-          <div className="video-box">
-            <video id="video" loop autoPlay>
-              <source src={TUNEderLanding} type="video/mp4" />
-            </video>
-          </div>
+
           <p>
             Technologies used:
             <br />- Utilized ReactJS, Redux, and ReactRrouter to create a
             dynamic application
-            <br />- Integrated Spotify API using authorization tokens and
+            <br />- Integrated the Spotify API using authorization tokens and
             displayed each user’s top artists
             <br />- Used bcryptjs and JSON Web Token to hash and salt user
             password in node backend
@@ -249,10 +134,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img
-              src="https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3860371df6121bd9176d5889b487c3e1&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
+            <img src={Headshot} alt="" />
           </span>
           <p>
             TECHNOLOGIES: Javascript, React, Vue, Next, HTML5, CSS3, Node.js,
@@ -262,19 +144,18 @@ class Main extends React.Component {
             APIs
             <br />
             <br />
-            After graduating from the University of North Texas with a Bachelor
-            of Business Administration, I entered the work force and fell into
-            technical recruiting. To better understand what my clients and
-            candidates needed, I began coding and was instantly hooked. I
-            recently completed a programming course at DevMountain and have been
-            freelancing since graduating.
+            After graduating from the University of North Texas, I entered the
+            work force and fell into technical recruiting. To better understand
+            what my clients and candidates needed, I began coding and was
+            instantly hooked. I recently completed an immersive programming
+            course at DevMountain and have been freelancing since graduation.
             <br />
             <br /> My background is diverse, as I was previously both a
-            professional artist and a business/accounting graduate. Web
-            development has enabled me to fulfill both my need to create and
-            utilize my talent for problem solving. Because of this, I'm truly
-            passionate about my projects and enjoy working to make them as
-            dynamic and asthetically appealing as possible.
+            professional dancer and a business graduate. Web development has
+            enabled me to fulfill both my need to create and utilize my talent
+            for problem solving. Because of this, I'm truly passionate about my
+            projects and enjoy working to make them as dynamic and aesthetically
+            appealing as possible.
           </p>
           {close}
         </article>
