@@ -11,7 +11,9 @@ const Header = props => (
         <p>
           Full-Stack Developer
           <br />
-          JavaScript | React | Node | Express | MongoDB
+          JavaScript | React | AWS | Node | MongoDB
+          <br />
+          972-832-8883 | rodriguez.ashlynn@gmail.com
         </p>
       </div>
     </div>
@@ -24,7 +26,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Roomers
+            Deaf Bible
           </a>
         </li>
         <li>
@@ -34,7 +36,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            TUNEder
+            Translation Tool
           </a>
         </li>
         <li>
@@ -44,7 +46,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Roomers
           </a>
         </li>
         <li>
@@ -54,7 +56,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            About
           </a>
         </li>
       </ul>

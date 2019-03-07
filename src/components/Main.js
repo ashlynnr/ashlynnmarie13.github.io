@@ -1,23 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
-
-import Roomers2 from '../images/portfolio/Roomers 2.jpeg'
-import Roomers3 from '../images/portfolio/Roomers 3.jpeg'
-import Roomers4 from '../images/portfolio/Roomers 4.jpeg'
-import Roomers5 from '../images/portfolio/Roomers 5.jpeg'
 import RoomersLanding from '../images/portfolio/Roomers Landing.mp4'
-import TUNEder2 from '../images/portfolio/TUNEder 2.jpeg'
-import TUNEder3 from '../images/portfolio/TUNEder 3.jpeg'
-import TUNEder4 from '../images/portfolio/TUNEder 4.jpeg'
-import TUNEder5 from '../images/portfolio/TUNEder 5.jpeg'
-import TUNEderLanding from '../images/portfolio/TUNEder Landing.mp4'
+import deafbible from '../images/portfolio/deafbible.jpg'
+import CSV from '../images/portfolio/TTD - CSV.jpg'
+import Progress from '../images/portfolio/TTD - Progress.jpg'
+import TranslatorDashboard from '../images/portfolio/TTD - Translator Dash.jpg'
 import Headshot from '../images/portfolio/Headshot.jpg'
 
-import Carousel from './Carousel.js'
 import './Main.css'
 
 class Main extends React.Component {
@@ -39,6 +29,98 @@ class Main extends React.Component {
         <article
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Deaf Bible Society Website</h2>
+          <h3>
+            <a
+              href="https://www.deafbiblesociety.com/"
+              className="roomers-link"
+            >
+              View at: deafbiblesociety.com
+            </a>
+          </h3>
+          <br />
+          <span className="image main">
+            <img src={deafbible} alt="" />
+          </span>
+          <p>
+            <br />
+            Began Contributing: October 2018
+            <br />
+            Role: Front-End Developer
+            <br />
+            At Deaf Bible, one of my roles was to help develop and maintain the
+            new version of the organization's website.
+          </p>
+
+          <p>
+            Technologies used:
+            <br />- Utilized ReactJS and implemented React Hooks
+            <br />- SCSS and Bootstrap
+            <br />- Google Analytics API: Web Tracking
+            <br />- AWS: S3 and Dynamo DB
+            <br />- AJAX
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Translation Database Tool</h2>
+          <p>
+            In-House Tool for DBS
+            <br />
+            Role: Full-Stack Developer (Individual Project)
+            <br />
+            This database tool was developed for Deaf Bible to be used by the
+            translation teams. The goal of the app is to take phrases and text
+            from all of Deaf Bible's media, translate them in desired languages,
+            and allow users to log-in and approve/edit the translations so that
+            they are both accurate and understandable to their deaf populations.
+            <br />
+            The application includes a log-in system, a CSV upload feature, a
+            dashboard for both admin and users, progress information along with
+            an alert/notification system, a workspace to edit/approve items, and
+            the ability to export everything in the database to S3 from the app.
+          </p>
+          <p>
+            Technologies used:
+            <br />- Utilized ReactJS, Redux, and AWS Serverless to create both
+            the front and back-end of a dynamic application
+            <br />- Worked using AWS services and gained an in depth
+            understanding of S3, DynamoDB, CloudWatch, API Gateway, and Data
+            Pipeline
+            <br />- Used redux saga middleware and integrated React Hooks
+            <br />- Drafted a simple and clean design using Balsamiq
+            <br />- Used the Semantic UI library along with styled components
+            <br />- Created a login system using Amazon Cognito
+            <br />- Google Translate API
+          </p>
+          <span className="image main">
+            <img src={CSV} alt="" />
+          </span>
+          <span className="image main">
+            <img src={TranslatorDashboard} alt="" />
+          </span>
+          <span className="image main">
+            <img src={Progress} alt="" />
+          </span>
+          <br />
+
+          {close}
+        </article>
+
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
@@ -84,50 +166,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">TUNEder</h2>
-          <div className="video-box">
-            <video id="video" loop autoPlay>
-              <source src={TUNEderLanding} type="video/mp4" />
-            </video>
-          </div>
-          <br />
-          <p>
-            Completion: July 2017
-            <br />
-            Role: Full-Stack Developer
-            <br />
-            As a music enthusiast, I have found that I connect well with others
-            that share my same taste. This inspired me to create "TUNEder", a
-            dating and friend finding service based on music taste. Using the
-            Spotify API, I was able to add a user's music streaming habits to
-            their profile and the app also offers a matching and chat feature.
-            This was a personally developed project.
-          </p>
-
-          <p>
-            Technologies used:
-            <br />- Utilized ReactJS, Redux, and ReactRrouter to create a
-            dynamic application
-            <br />- Integrated the Spotify API using authorization tokens and
-            displayed each user’s top artists
-            <br />- Used bcryptjs and JSON Web Token to hash and salt user
-            password in node backend
-            <br />- Stored user, profile, and match information in MongoDB
-            <br />- Additional technologies and libraries: Node, Express,
-            Passport, and Axios
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
@@ -137,18 +177,20 @@ class Main extends React.Component {
             <img src={Headshot} alt="" />
           </span>
           <p>
-            TECHNOLOGIES: Javascript, React, Vue, Next, HTML5, CSS3, Node.js,
-            Express,
+            TECHNOLOGIES: Javascript, React, Redux, AWS Serverless, Next, HTML5,
+            CSS3, Node.js, Express,
             <br />
             Socket.io, OAuth 2.0, JSON Web Token, MongoDB, PostgreSQL, RESTful
-            APIs
+            APIs,
+            <br />
+            DynamoDB, Amazon Cognito, S3, Axios, RESTful APIs, GraphQL
             <br />
             <br />
-            After graduating from the University of North Texas, I entered the
-            work force and fell into technical recruiting. To better understand
-            what my clients and candidates needed, I began coding and was
-            instantly hooked. I recently completed an immersive programming
-            course at DevMountain and have been freelancing since graduation.
+            I'm a dedicated full-stack developer that loves to create,
+            contribute, and learn! After graduating from the University of North
+            Texas, I entered the work force and fell into technical recruiting.
+            To better understand what my clients and candidates needed, I began
+            coding and was hooked.
             <br />
             <br /> My background is diverse, as I was previously both a
             professional dancer and a business graduate. Web development has
@@ -157,43 +199,6 @@ class Main extends React.Component {
             projects and enjoy working to make them as dynamic and aesthetically
             appealing as possible.
           </p>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          <label htmlFor="name">Email: rodriguez.ashlynn@gmail.com</label>
-          <label htmlFor="name">Phone: 972-832-8883</label>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4" />
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-
           {close}
         </article>
       </div>
