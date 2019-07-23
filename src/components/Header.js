@@ -43,6 +43,16 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
+              props.onOpenArticle('pizza hut')
+            }}
+          >
+            Pizza Hut App
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
               props.onOpenArticle('about')
             }}
           >

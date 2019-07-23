@@ -180,3 +180,11 @@ a:hover,
 a:active {
   text-decoration: none !important;
 }
+
+.ph-images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 20%;
+}

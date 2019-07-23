@@ -7,6 +7,12 @@ import CSV from '../images/portfolio/TTD - CSV.jpg'
 import Progress from '../images/portfolio/TTD - Progress.jpg'
 import TranslatorDashboard from '../images/portfolio/TTD - Translator Dash.jpg'
 import Headshot from '../images/portfolio/Headshot.jpg'
+import PizzaHutOne from '../images/portfolio/Screen Shot 2019-07-22 at 2.52.09 PM.png'
+import PizzaHutTwo from '../images/portfolio/Screen Shot 2019-07-22 at 2.55.32 PM.png'
+import PizzaHutThree from '../images/portfolio/Screen Shot 2019-07-22 at 2.56.14 PM.png'
+import Roomers1 from '../images/portfolio/Roomers 5.jpeg'
+import Roomers2 from '../images/portfolio/Roomers 1LI.jpeg'
+import Roomers3 from '../images/portfolio/Roomers 2.jpeg'
 
 import './Main.css'
 
@@ -119,6 +125,49 @@ class Main extends React.Component {
         </article>
 
         <article
+          id="pizza hut"
+          className={`${this.props.article === 'pizza hut' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Pizza Hut App</h2>
+          <br />
+          <div className="ph-images-container">
+            <span
+              className="image main"
+              style={{
+                margin: '5%',
+                border: 'solid rgba(255, 255, 255, 0.158) 5px',
+              }}
+            >
+              <img src={PizzaHutOne} alt="" />
+            </span>
+            <span
+              className="image main"
+              style={{
+                margin: '5%',
+                border: 'solid rgba(255, 255, 255, 0.158) 5px',
+              }}
+            >
+              <img src={PizzaHutTwo} alt="" />
+            </span>
+          </div>
+          <p>
+            Role: Team Member - UI pictured completed by me
+            <br />
+          </p>
+          <p>
+            Technologies used:
+            <br />- React
+            <br />- React Native
+            <br />- Redux
+            <br />- Material UI, JSDocs, XCode, Android Studio
+          </p>
+          {close}
+        </article>
+
+        <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -126,14 +175,9 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Roomers</h2>
-          <h3>
-            <a href="http://www.roomers.space/#/" className="roomers-link">
-              View at: roomers.space
-            </a>
-          </h3>
           <br />
           <div className="video-box">
-            <video id="video" loop autoPlay>
+            <video id="video" controls>
               <source src={RoomersLanding} type="video/mp4" />
             </video>
           </div>
@@ -162,6 +206,34 @@ class Main extends React.Component {
             <br />- Socket.io for feature similar to Facebook messenger
             <br />- Axios, Momentjs, Google Maps API and Sementic UIs
           </p>
+          <div className="ph-images-container">
+            <span
+              className="image main"
+              style={{
+                margin: '1%',
+                height: '100%',
+              }}
+            >
+              <img src={Roomers1} alt="" />
+            </span>
+            <span
+              className="image main"
+              style={{
+                margin: '1%',
+              }}
+            >
+              <img src={Roomers2} alt="" />
+            </span>
+            <span
+              className="image main"
+              style={{
+                margin: '1%',
+                height: '100%',
+              }}
+            >
+              <img src={Roomers3} alt="" />
+            </span>
+          </div>
           {close}
         </article>
 
