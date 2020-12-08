@@ -187,4 +187,11 @@ a:active {
   justify-content: space-around;
   width: 60%;
   margin-left: 20%;
+  margin-top: -5%;
+}
+
+.roomers-images-container {
+  display: flex;
+  flex-direction: columnnj5768;
+  justify-content: space-around;
 }

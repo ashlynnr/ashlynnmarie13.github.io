@@ -131,7 +131,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Pizza Hut App</h2>
+          <h2 className="major">Pizza App</h2>
           <br />
           <div className="ph-images-container">
             <span
@@ -154,7 +154,7 @@ class Main extends React.Component {
             </span>
           </div>
           <p>
-            Role: Team Member - UI pictured completed by me
+            Role: Team Member - created payment feature
             <br />
           </p>
           <p>
@@ -206,7 +206,7 @@ class Main extends React.Component {
             <br />- Socket.io for feature similar to Facebook messenger
             <br />- Axios, Momentjs, Google Maps API and Sementic UIs
           </p>
-          <div className="ph-images-container">
+          <div className="roomers-images-container">
             <span
               className="image main"
               style={{
@@ -245,10 +245,19 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={Headshot} alt="" />
-          </span>
           <p>
+            I am a dedicated full-stack developer that loves to deliver
+            top-notch, dynamic applications as quickly as possible. I have
+            extensive professional experience with both React and React Native,
+            as well as other technologies listed below.
+            <br />
+            <br /> As a tech-enthusiast and artist, web development has enabled
+            me to fulfill both my need to create and utilize my talent for
+            problem solving. Because of this, I'm truly passionate about my
+            projects and enjoy working to make them as dynamic and aesthetically
+            appealing as possible.
+            <br />
+            <br />
             TECHNOLOGIES: Javascript, React, Redux, AWS Serverless, Next, HTML5,
             CSS3, Node.js, Express,
             <br />
@@ -256,20 +265,18 @@ class Main extends React.Component {
             APIs,
             <br />
             DynamoDB, Amazon Cognito, S3, Axios, RESTful APIs, GraphQL
+          </p>
+          <h2 className="major">Contant Information</h2>
+          <p>
+            Email:
+            <a href="mailto:ashrodriguez.dev@gmail.com">
+              {' '}
+              ashrodriguez.dev@gmail.com
+            </a>
             <br />
-            <br />
-            I'm a dedicated full-stack developer that loves to create,
-            contribute, and learn! After graduating from the University of North
-            Texas, I entered the work force and fell into technical recruiting.
-            To better understand what my clients and candidates needed, I began
-            coding and was hooked.
-            <br />
-            <br /> My background is diverse, as I was previously both a
-            professional dancer and a business graduate. Web development has
-            enabled me to fulfill both my need to create and utilize my talent
-            for problem solving. Because of this, I'm truly passionate about my
-            projects and enjoy working to make them as dynamic and aesthetically
-            appealing as possible.
+            <a href="https://www.linkedin.com/in/ashlynn-rodriguez-marie/">
+              Linkedin Profile
+            </a>
           </p>
           {close}
         </article>

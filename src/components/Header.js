@@ -11,7 +11,7 @@ const Header = props => (
         <p>
           Full-Stack Developer
           <br />
-          JavaScript | React | AWS | Node | MongoDB
+          JavaScript | React | React Native | Node | AWS
           <br />
           972-832-8883 | rodriguez.ashlynn@gmail.com
         </p>
@@ -46,7 +46,7 @@ const Header = props => (
               props.onOpenArticle('pizza hut')
             }}
           >
-            Pizza Hut App
+            Pizza App
           </a>
         </li>
         <li>
